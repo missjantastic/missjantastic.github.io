@@ -1,0 +1,96 @@
+:root {
+    --background-color: #F6F5F5;
+    --pink-bg: #EBE4E6;
+    --blue-bg: #D2E2DD;
+    --yellow-bg: #F0E1BD;
+    --main-font-color: #1D3347;
+}
+
+html, body {
+    font-family: "NanumMyeongjo";
+    background: var(--background-color);
+    color: var(--main-font-color);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Poiret One";
+    font-size: 70px;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: "NanumMyeongjo";
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#heading {
+    background: var(--pink-bg);
+}
+
+#animation {
+    background: linear-gradient(to bottom, var(--pink-bg), var(--pink-bg) 80%, var(--background-color) 20%, var(--background-color));
+}
+
+#introVid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutme {
+    background: var(--background-color);
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    text-align: center;
+    min-width: 600px;
+
+}
+
+.techExp {
+    background: var(--pink-bg);
+}
+
+.commExp {
+    background: var(--blue-bg);
+}
+
+.otherExp {
+    background: var(--yellow-bg);
+}
+
+#skills {
+    background: var(--background-color);
+}
+
+#portfolio {
+    background: var(--yellow-bg);
+}
+
+#blog {
+    background: var(--background-color)
+}
+
+#contact {
+    background: var(--pink-bg)
+}
+
+@media (min-width: 400px){
+    .techExp{
+      grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer";
+    }
+  }
