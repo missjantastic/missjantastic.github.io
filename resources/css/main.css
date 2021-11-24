@@ -35,16 +35,21 @@ h2 {
     font-weight: 800;
 }
 
-video {
-    height: 70%;
-    width: 70%;
+#animationContainer{
+    width:50vw;
+    height:28.125vw;
+    margin: 0 auto;
+}
+#animation{
+    height: 100%;
+    width: 100%;
 }
 
 #heading {
     background: var(--pink-bg);
 }
 
-#animation {
+#animationBackground {
     background: linear-gradient(to bottom, var(--pink-bg), var(--pink-bg) 80%, var(--background-color) 20%, var(--background-color));
 
 }
